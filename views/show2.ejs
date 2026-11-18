@@ -12,19 +12,19 @@
         <thead>
             <tr>
                 <td>Nome</td>
-                <td>CPF</td>
-                <td>E-mail</td>
-                <td>Telefone</td>
+                <td>cpf</td>
+                <td>email</td>
+                <td>telefone/td>
                 <td>Ação</td>
             </tr>
         </thead>
         <tbody>
             <% crud.forEach(function(details) { %>
                 <tr>
-                    <td><%= details.nome %></td>
-                    <td><%= details.cpf %></td>
-                    <td><%= details.email %></td>
-                    <td><%= details.telefone %></td>
+                    <td><%= details.nome %>
+                    <td><%= details.cpf%>
+                    <td><%= details.email%>
+                    <td><%= details.telefone%>
                     <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Deletar</a>
                     </td>
                 </tr>
