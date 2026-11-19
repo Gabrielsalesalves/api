@@ -40,7 +40,7 @@ app.get('/edit/:id', async (req, res) => {
 //editar
 app.post('/edit' , async(req, res) =>{
     await collection.updateOneOne (
-        {_id: new ObjectId(req.params.id)}
+        {_id: new ObjectId(req.params.id)},
         {
             $set:{
                 nome: req.body.nome,
